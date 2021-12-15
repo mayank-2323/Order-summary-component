@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    /* outline:2px solid blue; */
+}
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body{
+    font-family: 'Red Hat Display',verdana;
+    background: url(/images/pattern-background-desktop.svg) no-repeat center/cover;
+    background-color: var(--Pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.header-img{
+    border-radius: 10px 10px 0 0;x
+    width:100%;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    max-width:450px;
+    margin:0 auto;
+    padding-bottom:1px;
+}
+
+.order-summary{
+    text-align:center;
+    padding:5px 40px;
+}
+.order-summary h3{
+    color: var(--Dark-blue);
+}
+.order-summary p{
+    color: var(--Desaturated-blue);
+}
+
+
+.plan-details{
+    background-color: var(--Very-pale-blue);
+    padding:5px 20px;
+    width:85%;
+    margin:5px auto;
+    border-radius: 10px;
+    display:flex;
+    justify-content:space-between;   
+    align-items: center;
+}
+
+article{
+    line-height: 0.03;
+}
+article h4{
+    color: var(--Dark-blue);
+}
+article p{
+    color: var(--Desaturated-blue);
+}
+
+.plan-details-left{
+    display: flex;
+    align-items: center;
+}
+.plan-details-left img{
+    margin-right:15px;
+}
+.plan-details-right a{
+    color: var(--Bright-blue);
+    font-weight: bold;
+}
+
+button{
+    font-family: inherit;
+    border:none;
+    padding:5px 10px;
+    border-radius:5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.btn-cancel{
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+}
+.btn-cancel:hover{
+    color: var(--Dark-blue);
+    transition: 0.3s ease-in-out;
+}
+.btn-proceed{
+    background-color: var(--Bright-blue);
+    color: white;  
+    padding: 7px 10px; 
+}
+.btn-proceed:hover, .btn-change:hover{
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+
+
+.payment-area{
+    margin:15px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
