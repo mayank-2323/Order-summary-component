@@ -2,6 +2,8 @@
 
 *{
     box-sizing: border-box;
+    padding:0;
+    margin:0;
     /* outline:2px solid blue; */
 }
 
@@ -67,9 +69,11 @@ article{
 }
 article h4{
     color: var(--Dark-blue);
+    padding: 10px;
 }
 article p{
     color: var(--Desaturated-blue);
+    padding: 10px;
 }
 
 .plan-details-left{
